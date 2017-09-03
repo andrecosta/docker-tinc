@@ -4,7 +4,9 @@ Dockerfile (c) 2016 B&S Sistemas de Control, info@bys-control.com.ar
 
 > [tinc](http://www.tinc-vpn.org) is a Virtual Private Network (VPN) daemon that uses tunnelling and encryption to create a secure private network between hosts on the Internet.
 
-This Dockerfile provides an image for running tinc 1.1 (pre release, as packaged by Debian).
+This Dockerfile provides an image for running tinc, compiled from source.
+
+There
 
 ## Usage
 
