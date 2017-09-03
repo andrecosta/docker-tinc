@@ -1,5 +1,6 @@
 tinc:
-  image: byscontrol/tinc
+  restart: unless-stopped
+  image: byscontrol/tinc:1.1pre15
   container_name: tinc
   net: host
   cap_add:
@@ -10,6 +11,7 @@ tinc:
     - "tinc-config:/etc/tinc"
   environment:
     - TINC_NAME=test_client
-    - TINC_IP=10.100.0.100
-    - TINC_NETMASK=255.255.0.0
+    - TINC_IP=10.100.0.100/16
+    - TINC_SUBNET=10.100.0.100
     - TINC_INTERFACE=tun0
+    - TINC_CONNECT_TO=server
