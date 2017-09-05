@@ -33,8 +33,10 @@ A basic run command loading persisted configuration from `/srv/tinc` and creatin
         --cap-add NET_ADMIN \
         --volume tinc:/etc/tinc \
         -e TINC_NAME:client1 \
-        -e TINC_IP:10.0.1.1 \
+        -e TINC_IP:10.0.1.1/24 \
         -e TINC_SUBNET:10.0.1.1 \
+        -e TINC_INTERFACE=tun0 \
+        -e TINC_CONNECT_TO=server \
         byscontrol/tinc
 
 ## Administration and Maintenance
