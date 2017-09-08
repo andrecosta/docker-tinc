@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM resin/rpi-raspbian:latest
 MAINTAINER ByS Control "info@bys-control.com.ar"
 
 # Remove SUID programs

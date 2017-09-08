@@ -28,14 +28,15 @@ A basic run command loading persisted configuration from `/srv/tinc` and creatin
 
     docker run -d \
         --name tinc \
-        --net=host \
-        --device=/dev/net/tun \
+        --network host \
+        --device /dev/net/tun \
         --cap-add NET_ADMIN \
         --volume tinc:/etc/tinc \
-        -e TINC_NAME:client1 \
-        -e TINC_IP:10.0.1.1 \
-        -e TINC_SUBNET:10.0.1.1 \
-        byscontrol/tinc
+        -e TINC_NAME=client1 \
+        -e TINC_IP=10.0.1.1 \
+        -e TINC_SUBNET=10.0.1.1 \
+        -e TINC_INTERFACE=tun0 \
+        byscontrol/tinc-rpi:1.1pre15
 
 ## Administration and Maintenance
 
