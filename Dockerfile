@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:latest
+FROM resin/armv7hf-debian
 MAINTAINER ByS Control "info@bys-control.com.ar"
 
 # Remove SUID programs
