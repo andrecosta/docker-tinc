@@ -1,8 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
-* `1.1pre16`, `1.1`, `latest` [(1.1pre16/Dockerfile)](https://github.com/bys-control/docker-tinc/blob/master/docker/Dockerfile.1.1pre16) [![](https://images.microbadger.com/badges/image/byscontrol/tinc:1.1pre16.svg)](https://microbadger.com/images/byscontrol/tinc:1.1pre16 "Get your own image badge on microbadger.com")
-* `1.1pre15` [(1.1pre15/Dockerfile)](https://github.com/bys-control/docker-tinc/blob/master/docker/Dockerfile.1.1pre15) [![](https://images.microbadger.com/badges/image/byscontrol/tinc:1.1pre15.svg)](https://microbadger.com/images/byscontrol/tinc:1.1pre15 "Get your own image badge on microbadger.com")
-* `1.1pre14` [(1.1pre14/Dockerfile)](https://github.com/bys-control/docker-tinc/blob/master/docker/Dockerfile.1.1pre14) [![](https://images.microbadger.com/badges/image/byscontrol/tinc:1.1pre14.svg)](https://microbadger.com/images/byscontrol/tinc:1.1pre14 "Get your own image badge on microbadger.com")
+* `1.1pre16`, `1.1`, `latest` [(1.1pre16/Dockerfile)](https://github.com/bys-control/docker-tinc/blob/master/docker/1.1/Dockerfile.1.1pre16) [![](https://images.microbadger.com/badges/image/byscontrol/tinc:1.1pre16.svg)](https://microbadger.com/images/byscontrol/tinc:1.1pre16 "Get your own image badge on microbadger.com")
+* `1.1pre15` [(1.1pre15/Dockerfile)](https://github.com/bys-control/docker-tinc/blob/master/docker/1.1/Dockerfile.1.1pre15) [![](https://images.microbadger.com/badges/image/byscontrol/tinc:1.1pre15.svg)](https://microbadger.com/images/byscontrol/tinc:1.1pre15 "Get your own image badge on microbadger.com")
+* `1.1pre14` [(1.1pre14/Dockerfile)](https://github.com/bys-control/docker-tinc/blob/master/docker/1.1/Dockerfile.1.1pre14) [![](https://images.microbadger.com/badges/image/byscontrol/tinc:1.1pre14.svg)](https://microbadger.com/images/byscontrol/tinc:1.1pre14 "Get your own image badge on microbadger.com")
+* `1.0.34` [(1.0.34/Dockerfile)](https://github.com/bys-control/docker-tinc/blob/master/docker/1.0/Dockerfile.1.0.34) [![](https://images.microbadger.com/badges/image/byscontrol/tinc:1.0.34.svg)](https://microbadger.com/images/byscontrol/tinc:1.0.34 "Get your own image badge on microbadger.com")
 
 Dockerfile (c) 2016 B&S Sistemas de Control, info@bys-control.com.ar
 
