@@ -1,7 +1,7 @@
 FROM alpine
 MAINTAINER ByS Control "info@bys-control.com.ar"
 
-ARG tincversion=1.1pre16
+ARG tincversion=1.1pre14
 
 # build dependencies
 RUN apk add --no-cache readline-dev zlib-dev lzo-dev libressl-dev linux-headers gcc g++ make ncurses-dev libpcap-dev && \
