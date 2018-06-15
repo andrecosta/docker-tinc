@@ -1,0 +1,24 @@
+FROM alpine:3.7
+MAINTAINER ByS Control "info@bys-control.com.ar"
+
+ARG tincversion=1.1pre14
+
+# build dependencies
+RUN apk add --no-cache readline-dev zlib-dev lzo-dev libressl-dev linux-headers gcc g++ make ncurses-dev libpcap-dev && \
+# runtime dependencies
+  apk add --no-cache readline zlib lzo libpcap supervisor && \
+# get source code
+  wget -q -O - "$@" http://www.tinc-vpn.org/packages/tinc-${tincversion}.tar.gz | tar -xzC /tmp/ && \
+# compile
+  cd /tmp/tinc-${tincversion} && ./configure --prefix=/usr --enable-jumbograms --enable-tunemu --sysconfdir=/etc --localstatedir=/var && \
+  make && make install src && \
+# cleanup
+  cd .. && rm -rfv tinc-${tincversion} && apk del --no-cache --purge readline-dev zlib-dev lzo-dev libressl-dev linux-headers gcc g++ make ncurses-dev libpcap-dev libc-utils
+
+ADD supervisord.conf /etc/supervisord.conf
+ADD scripts/ /root/scripts
+
+EXPOSE 655/tcp 655/udp
+VOLUME /etc/tinc
+
+ENTRYPOINT [ "/usr/bin/supervisord" ]
