@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Create initial private tinc keys
 tinc init $TINC_NAME
