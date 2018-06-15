@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Configure tinc host
 /root/scripts/configure.sh
